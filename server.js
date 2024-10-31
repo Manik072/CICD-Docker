@@ -11,11 +11,13 @@ dotenv.config()
 // connectDB();
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello, World!  dad' });
+  res.json({ message: 'Hello, CD/CD pipline' });
 });
 
+console.log("Welcome to the First CI/CD pipeline for Node.js application! in Docker Registry")
 
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+
+app.listen(process.env.PORT, () => {
+    console.log('Server is running on'+process.env.PORT);
 })
