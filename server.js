@@ -8,7 +8,7 @@ app.use(express.json());
 
 dotenv.config()
 
-connectDB();
+// connectDB();
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello, World!  dad' });
