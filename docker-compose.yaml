@@ -1,0 +1,24 @@
+version: '3.8'
+name: dockerenvtest
+services:
+  nodeapp:
+     image: testenv2
+     environment:
+      - PORT=3000
+      - MONGODB_URL=mongodb://admin:password@mongo-db
+     ports:
+      - 3000:3000
+     depends_on:
+      - mongo-db
+
+
+  mongo-db:
+     image: mongo
+     restart: always
+     ports:
+       - 27017:27017
+     environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+
+     
