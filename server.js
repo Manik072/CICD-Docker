@@ -14,8 +14,12 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello, CD/CD pipline' });
 });
 
-console.log("Welcome to the First CI/CD pipeline for Node.js application! in Docker Registry")
 
+app.get("/hello", (req, res) => {
+  res.json({ message: 'Hello Harshita Gawar' });
+})
+
+console.log("Welcome to the First CI/CD pipeline for Node.js application! in Docker Registry")
 
 
 app.listen(process.env.PORT, () => {
