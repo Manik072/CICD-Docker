@@ -11,12 +11,12 @@ dotenv.config()
 // connectDB();
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello, CD/CD pipline' });
+  res.json({ message: 'Hello, agr app brahmin ha to hello route pe jao' });
 });
 
 
 app.get("/hello", (req, res) => {
-  res.json({ message: 'Hello Harshita Gawar' });
+  res.json({ message: 'Hello mr.Chammarr jiii pleejjj pick up the call' });
 })
 
 console.log("Welcome to the First CI/CD pipeline for Node.js application! in Docker Registry")
